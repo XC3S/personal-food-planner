@@ -1,0 +1,17 @@
+<div class="page" *ngIf="getRecipe() | async as recipe">
+    <div class="upper">
+        <img class="background-image" [src]="recipe.image">
+        
+        <a class="back-link" [routerLink]="['/']"> < Back </a>
+
+        <div class="informations">
+            
+            <p>{{ recipe.title }}</p>
+            <img class="info-image" [src]="recipe.image">
+            <h2>Test</h2>
+        </div>
+    </div>
+    <div class="ingredients">
+
+    </div>
+</div>

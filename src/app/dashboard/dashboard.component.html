@@ -1,0 +1,20 @@
+<h1>Dashboard</h1>
+
+<div *ngIf="getCategories() | async as categories">
+    <pre>categories: {{ categories | json}}</pre>
+    
+    <ng-container *ngFor="let categorie of categories">
+        <h3>{{categorie.title}}</h3>
+        <div [swiper]="config" class="swiper-container">
+            <div class="swiper-wrapper">
+                <ng-container *ngFor="let recipeId of categorie.recipeIds">
+                    <div class="swiper-slide" *ngIf="getRecipe(recipeId) | async as recipe">
+                        <a [routerLink]="['/detail', recipeId]">
+                            <img [src]="recipe.image">
+                        </a>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </ng-container>
+</div>
