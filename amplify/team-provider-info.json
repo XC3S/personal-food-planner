@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-personalfoodplanner-dev-180033-authRole",
+      "UnauthRoleArn": "arn:aws:iam::405618765219:role/amplify-personalfoodplanner-dev-180033-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::405618765219:role/amplify-personalfoodplanner-dev-180033-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-personalfoodplanner-dev-180033-deployment",
+      "UnauthRoleName": "amplify-personalfoodplanner-dev-180033-unauthRole",
+      "StackName": "amplify-personalfoodplanner-dev-180033",
+      "StackId": "arn:aws:cloudformation:eu-west-1:405618765219:stack/amplify-personalfoodplanner-dev-180033/b0c1fa90-54f7-11eb-b217-066046fd59ad",
+      "AmplifyAppId": "d2kw0eamz9m9ub"
+    }
+  }
+}
