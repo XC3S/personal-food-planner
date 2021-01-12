@@ -70,9 +70,11 @@ export class DataService {
 
   setStoreValue(key: string, value: any) {
     this.KeyStore.set(key,value);
+    console.log('KeyStore:', this.KeyStore);
   }
 
   getStoreValue(key: string): any {
+    console.log('KeyStore:', this.KeyStore);
     return this.KeyStore.has(key) ? this.KeyStore.get(key) : null;
   }    
 }
