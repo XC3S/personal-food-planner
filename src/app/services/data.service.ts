@@ -20,6 +20,8 @@ export class DataService {
   categories: Category[];
   recipies: Recipe[];
 
+  KeyStore: Map<string, any> = new Map<string, any>();
+
   constructor() { 
     this.categories = [
       {
@@ -65,4 +67,12 @@ export class DataService {
       observer.next(this.categories)
     })
   }
+
+  setStoreValue(key: string, value: any) {
+    this.KeyStore.set(key,value);
+  }
+
+  getStoreValue(key: string): any {
+    return this.KeyStore.has(key) ? this.KeyStore.get(key) : null;
+  }    
 }

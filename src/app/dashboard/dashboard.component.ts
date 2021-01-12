@@ -29,4 +29,10 @@ export class DashboardComponent implements OnInit {
     return this.dataService.getRecipeById(recipeId);
   }
 
+  indexChange(index) {
+    //TODO: https://github.com/zefoy/ngx-swiper-wrapper#use-it-in-your-html-template-with-custom-configuration
+    // - use [(index)]="index", and create a carousel component
+    // - use DataStoreage KeyStore to save and load current index
+    console.log('[indexChange] ', index);
+  }
 }

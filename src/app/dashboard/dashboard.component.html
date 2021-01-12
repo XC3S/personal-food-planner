@@ -5,7 +5,7 @@
     
     <ng-container *ngFor="let categorie of categories">
         <h3>{{categorie.title}}</h3>
-        <div [swiper]="config" class="swiper-container">
+        <div [swiper]="config" class="swiper-container" (indexChange)="indexChange(index)">
             <div class="swiper-wrapper">
                 <ng-container *ngFor="let recipeId of categorie.recipeIds">
                     <div class="swiper-slide" *ngIf="getRecipe(recipeId) | async as recipe">

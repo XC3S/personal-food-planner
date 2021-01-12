@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs/internal/Observable';
-import { DataService, Recipe } from '../services/data.service';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-detail-page',
